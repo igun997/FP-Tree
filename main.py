@@ -1,5 +1,7 @@
 import pandas as pd
 from copy import deepcopy
+import numpy as np
+import pyfpgrowth
 data = pd.read_csv("training_data.csv","ISO-8859-1",";")
 headers = pd.read_csv("training_data.csv",index_col=0, nrows=0,delimiter=";")
 cleaner = data.copy()
